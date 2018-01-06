@@ -3,6 +3,10 @@
     "displayName": "ASP Classic with JScript",
     "description": "Language support for ASP classic using JScript",
     "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Iislsdum/asp-classic-with-jscript.git"
+    },
     "publisher": "darandos",
     "engines": {
         "vscode": "^1.19.0"
