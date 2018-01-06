@@ -16,11 +16,8 @@
         "Languages"
     ],
     "keywords": [
-        "ASP",
-        "ASP Classic",
         "Classic ASP",
         "Active Server Pages",
-        "JScript",
         "JavaScript"
     ],
     "contributes": {
