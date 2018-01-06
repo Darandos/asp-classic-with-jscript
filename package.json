@@ -1,0 +1,35 @@
+{
+    "name": "asp-classic-with-jscript",
+    "displayName": "ASP Classic with JScript",
+    "description": "Language support for ASP classic using JScript",
+    "version": "1.0.0",
+    "publisher": "darandos",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "license": "GPL-3.0-or-later",    
+    "categories": [
+        "Languages"
+    ],
+    "keywords": [
+        "ASP",
+        "ASP Classic",
+        "Classic ASP",
+        "Active Server Pages",
+        "JScript",
+        "JavaScript"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "asp",
+            "aliases": ["ASP", "asp"],
+            "extensions": [".asp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "asp",
+            "scopeName": "source.asp",
+            "path": "./syntaxes/asp.tmLanguage.json"
+        }]
+    }
+}

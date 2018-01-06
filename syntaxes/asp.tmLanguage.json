@@ -1,0 +1,101 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ASP",
+	"patterns": [
+		{
+			"name": "meta.preprocessor.asp",
+			"begin": "<%@",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.begin.asp"
+				}
+			},
+			"end": "%>",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.end.asp"
+				},
+				"1": {
+					"name": "source.asp"
+				}
+			},
+			"patterns": [
+				{
+					"name": "keyword.other.asp",
+					"match": "CODEPAGE|ENABLESESSIONSTATE|LANGUAGE|LCID|TRANSACTION"
+				},
+				{
+					"name": "keyword.operator.assignment.asp",
+					"match": "="
+				},
+				{
+					"include": "source.js#string"
+				},
+				{
+					"include": "source.js#numeric-literal"
+				},
+				{
+					"include": "source.js#boolean-literal"
+				},
+				{
+					"name": "constant.language.scriptengine.asp",
+					"match": "VBScript|JScript|JavaScript"
+				},
+				{
+					"name": "constant.language.transaction-value.asp",
+					"match": "Required|Requires_New|Supported|Not_Supported"
+				}
+			]
+		},
+		{
+			"name": "meta.embedded.line.asp",
+			"begin": "<%=",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.begin.asp"
+				}
+			},
+			"end": "%>",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.end.asp"
+				},
+				"1": {
+					"name": "source.asp"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.js#expression"
+				}
+			]
+		},
+		{
+			"name": "meta.embedded.block.asp",
+			"begin": "<%",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.begin.asp"
+				}
+			},
+			"end": "%>",
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.section.embedded.end.asp"
+				},
+				"1": {
+					"name": "source.asp"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.js"
+				}
+			]
+		},
+		{
+			"include": "text.html.basic"
+		}
+	],
+	"scopeName": "source.asp"
+}
