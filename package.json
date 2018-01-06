@@ -9,7 +9,7 @@
     },
     "publisher": "darandos",
     "engines": {
-        "vscode": "^1.19.0"
+        "vscode": ">=0.9.1"
     },
     "license": "GPL-3.0-or-later",    
     "categories": [
