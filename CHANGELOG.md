@@ -1,3 +1,6 @@
+## 1.2.1
+- Merge syntax files
+
 ## 1.2.0
 - Fix commenting of HTML, CSS, and JavaScript
 - Remove release notes from README

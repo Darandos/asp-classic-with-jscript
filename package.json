@@ -2,7 +2,7 @@
     "name": "asp-classic-with-jscript",
     "displayName": "ASP Classic with JScript",
     "description": "Language support for ASP classic using JScript",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/Iislsdum/asp-classic-with-jscript.git"
@@ -37,13 +37,8 @@
         "grammars": [
             {
                 "language": "asp",
-                "scopeName": "source.asp",
-                "path": "./syntaxes/asp.tmLanguage.json"
-            },
-            {
-                "language": "asp",
                 "scopeName": "text.html.asp",
-                "path": "./syntaxes/html.tmLanguage.json",
+                "path": "./syntaxes/asp.tmLanguage.json",
                 "embeddedLanguages": {
                     "source.asp": "asp",
                     "text.html": "html",
