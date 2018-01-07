@@ -1,3 +1,6 @@
+## 1.2.3
+- Link changelog in README
+
 ## 1.2.2
 - Add LICENSE file and copyright notice
 

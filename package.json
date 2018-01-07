@@ -2,7 +2,7 @@
     "name": "asp-classic-with-jscript",
     "displayName": "ASP Classic with JScript",
     "description": "Language support for ASP classic using JScript",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "repository": {
         "type": "git",
         "url": "https://github.com/Iislsdum/asp-classic-with-jscript.git"
