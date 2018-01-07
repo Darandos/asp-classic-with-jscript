@@ -1,5 +1,6 @@
 ## 1.2.0
 - Fix commenting of HTML, CSS, and JavaScript
+- Remove release notes from README
 
 ## 1.1.1
 - Increment version number to allow release notes for v1.1.0 to be published to the marketplace
