@@ -1,3 +1,6 @@
+## 1.2.2
+- Add LICENSE file and copyright notice
+
 ## 1.2.1
 - Merge syntax files
 
