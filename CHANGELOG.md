@@ -1,3 +1,9 @@
+## 1.2.0
+- Fix commenting of HTML, CSS, and JavaScript
+
+## 1.1.1
+- Increment version number to allow release notes for v1.1.0 to be published to the marketplace
+
 ## 1.1.0
 - Add support for versions of VS Code older than 1.19.0
 
