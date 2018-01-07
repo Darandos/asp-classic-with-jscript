@@ -4,7 +4,7 @@ Language support for ASP classic using JScript
 
 ## Release Notes
 
-See [changelog](CHANGELOG.MD)
+See [changelog](CHANGELOG.md)
 
 ## Copyright Notice
 

@@ -1,3 +1,6 @@
+## 1.2.4
+- Fix changelog link in README
+
 ## 1.2.3
 - Link changelog in README
 
