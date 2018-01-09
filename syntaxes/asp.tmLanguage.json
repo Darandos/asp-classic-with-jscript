@@ -78,29 +78,6 @@
 			]
 		},
 		{
-			"name": "meta.embedded.block.asp",
-			"begin": "<%=?",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.begin.asp"
-				}
-			},
-			"end": "%>",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.end.asp"
-				},
-				"1": {
-					"name": "source.asp"
-				}
-			},
-			"patterns": [
-				{
-					"include": "source.js"
-				}
-			]
-		},
-		{
 			"include": "text.html.basic"
 		}
 	]
