@@ -1,7 +1,36 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "ASP",
-	"scopeName": "text.html.asp",	
+	"scopeName": "text.html.asp",
+	"injections": {
+		"text.html.asp - (meta.embedded | meta.tag), L:text.html.asp meta.tag, L:text.html.asp source.js": {
+			"patterns": [
+				{
+					"name": "meta.embedded.block.asp",
+					"begin": "<%=?",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.section.embedded.begin.asp"
+						}
+					},
+					"end": "%>",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.section.embedded.end.asp"
+						},
+						"1": {
+							"name": "source.asp"
+						}
+					},
+					"patterns": [
+						{
+							"include": "source.js"
+						}
+					]
+				}
+			]
+		}
+	},
 	"patterns": [
 		{
 			"name": "meta.preprocessor.asp",
@@ -49,31 +78,8 @@
 			]
 		},
 		{
-			"name": "meta.embedded.line.asp",
-			"begin": "<%=",
-			"beginCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.begin.asp"
-				}
-			},
-			"end": "%>",
-			"endCaptures": {
-				"0": {
-					"name": "punctuation.section.embedded.end.asp"
-				},
-				"1": {
-					"name": "source.asp"
-				}
-			},
-			"patterns": [
-				{
-					"include": "source.js#expression"
-				}
-			]
-		},
-		{
 			"name": "meta.embedded.block.asp",
-			"begin": "<%",
+			"begin": "<%=?",
 			"beginCaptures": {
 				"0": {
 					"name": "punctuation.section.embedded.begin.asp"
@@ -88,7 +94,6 @@
 					"name": "source.asp"
 				}
 			},
-			"contentName": "source.asp",
 			"patterns": [
 				{
 					"include": "source.js"
