@@ -1,3 +1,6 @@
+## 1.3.0
+- Fix identification of ASP tags inside HTML attribute values
+
 ## 1.2.4
 - Fix changelog link in README
 
