@@ -29,7 +29,8 @@
                     "asp"
                 ],
                 "extensions": [
-                    ".asp"
+                    ".asp",
+                    ".inc"
                 ],
                 "configuration": "./language-configuration.json"
             }
