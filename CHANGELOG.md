@@ -1,3 +1,6 @@
+## 1.3.2
+- Associate .inc files with the extension
+
 ## 1.3.1
 - Fix commenting inside ASP tags
 
